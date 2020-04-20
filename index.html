@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Three Muskebeers</title>
+    <link rel = "stylesheet" href = "assets/stylesheets/main.css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src = "script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body id = body>
+    <div class = row> <!-- Header -->
+        <div class = col-sm-6>
+        <h1>
+            <a id = title href = "index.html">Three Muskebeers<img src = "assets/logo.png" class = "img-rounded" style=" width: 50px; margin-left: 5px; margin-bottom: 15px;"></a>
+        </h1>
+        </div>
+        <div class = col-sm-6>
+            <h1>
+                <div style = "float: right;"><a href="https://www.apple.com/fi/ios/app-store/"><img style = "height: 40px; margin-left: 5px;" src="https://static.wolt.com/images/ios-en-2928664fe1fc6aca88583a6f606d60ba.svg" alt="Download app: ios"></a></div>
+
+                <div style = "float: right;"><a href="https://play.google.com/store/apps"><img style = "height: 40px;" src="https://static.wolt.com/images/android-en-5a7d78f3a8cd778ede8d1e352e706f6f.png" alt="Download app: android"></a></div>
+            </h1>
+        </div>
+    </div>
+
+
+
+    <nav class="navbar navbar-inverse"> <!-- Navigation bar -->
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Home</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+
+                <li><a href="#orderrow">Products & Services</a></li>
+                <li><a href="#routerow">Route</a></li>
+                <li><a href="#contactrow">Contact</a></li>
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <div id = "login-containerid" class="login-container">
+                <form id = "signform">
+                    <input id = "username" class = "navinput" type="text" placeholder="Username">
+                    <input id = "password" class = navinput type="password" placeholder="Password">
+                    <a id = "signin" class = navfunction onclick="signedin();" ><span class="glyphicon glyphicon-log-in"></span> Log in</a>
+                    <a id = "signup" class = navfunction onclick="signedin();" ><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                </form>
+              </div>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+
+<div style = "background-color: #222; padding: 15px"> <!-- Main body -->
+    <div class = "row frontpagerow">
+        <div class = "col-sm-4 frontpagecolumn">
+            <div class = "jumbotron jumbo" >
+                    <h3>About us</h3>
+                    <p>On one of many long days of studying together in
+                        DaTe's office, three friends wanted to grab a drink
+                        or two to close out the evening. It was past 9PM,
+                        and all hope seemed lost... <br>Thus, an idea was born.
+                    </p>
+            </div>
+        </div>
+        <div class = col-sm-8 style = "height: 100%; padding-right: 0px;">
+            <img class = "frontpagepicture" src = "assets/bus.jpg">
+        </div>
+    </div>
+
+    <div class = "row frontpagerow" id = "orderrow">
+        <div class = col-sm-8 style = "height: 100%; padding-left: 0px;">
+            <img class = "frontpagepicture" src = "assets/alcohol.jpg">
+        </div>
+        <div class = "col-sm-4 frontpagecolumn">
+            <div class = "jumbotron jumbo">
+                    <h3>Our services</h3>
+                    <p>We make home deliveries even <strong>after Alko's closing hours.</strong>
+                        You can replenish your beverages at your houseparty, drink alone in your underwear
+                        or even rent one of our certified bartenders
+                        to make your evening unforgettable!
+                    </p>
+                    <a href = "order.html"><button class = rowbutton>Order!</button></a>
+            </div>
+        </div>
+    </div>
+    <div class = "row frontpagerow" id = "routerow">
+        <div class = "col-sm-4 frontpagecolumn">
+            <div class = "jumbotron jumbo">
+                    <h3>Route</h3>
+                    <p>Our bus replenishes your drinks everynight on this route between 00:00 - 09:00. For more details about the timetable, Click below:</p>
+                    <a href = "route.html"><button class = rowbutton > Route details </button></a>
+            </div>
+        </div>
+        <div class = col-sm-8 style = "height: 100%; padding-right: 0px;">
+            <img class = "frontpagepicture" src = "assets/maproute.png">
+        </div>
+    </div>
+    <div class = "row frontpagerow" id = "contactrow">
+        <div class = col-sm-8 style = "height: 100%; padding-left: 0px;">
+            <img class = "frontpagepicture" src = "assets/contact.jpg">
+        </div>
+        <div class = "col-sm-4 frontpagecolumn">
+            <div class = "jumbotron jumbo">
+                    <h3>Contact</h3>
+                    <p>We love to hear from you. Please contact us with bookings, questions and feedback. Our team answers calls around the clock.</p>
+                    <a href = "contact.html"><button class = rowbutton > Contact us! </button></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class = "row footer">
+        <div class = "col-sm-4 footerlinks">
+            <div><a href="https://www.apple.com/fi/ios/app-store/"><img style = "height: 40px;" src="https://static.wolt.com/images/ios-en-2928664fe1fc6aca88583a6f606d60ba.svg" alt="Download app: ios"></a></div>
+            <div><a href="https://play.google.com/store/apps"><img style = "height: 40px;" src="https://static.wolt.com/images/android-en-5a7d78f3a8cd778ede8d1e352e706f6f.png" alt="Download app: android"></a></div>
+        </div>
+        <div class = "col-sm-4" style = "height: 100%; position: relative;">
+            <p style = "text-align: center;">date@abo.fi<br>vattenborgsvägen 5</p>
+        </div>
+        <div class = "col-sm-4 footerlinks">
+            <ul class= "list-group list-group-horizontal" style = "float: right;">
+                <a href = "https://twitter.com"> <img class = "linkpicture" src="assets/twitter.png" alt = "twittericon"> </a>
+                <a href = "https://www.facebook.com"> <img class = "linkpicture" src="assets/facebook.png" alt = "facebookicon"> </a>
+                <a href = "https://www.instagram.com"> <img class = "linkpicture" src="assets/instagram.png" alt = "instagramicon"> </a>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

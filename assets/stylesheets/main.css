@@ -1,0 +1,126 @@
+#title{
+    font-size: 1.3em;
+    color: black;
+
+}
+#body{
+    background-color: lightgrey;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.jumbotron.jumbo{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+.row.frontpagerow{
+    overflow: hidden;
+    height: 420px;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+.col-sm-4.frontpagecolumn{
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+.frontpagepicture{
+    height: 100%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 100%;
+}
+.rowbutton{
+    background-color: grey;
+    border-radius: 2px;
+    color: white;
+    height: 15%;
+    width: 80%;
+    font-size: 130%
+}
+.rowbutton:hover{
+    background-image:none;
+    background-color:#222;
+
+}
+.row.footer{
+    margin: 0px;
+    height: 86px;
+    padding: 0px;
+    margin-top: 5px;
+}
+.col-sm-4.footerlinks{
+    padding: 0px;
+}
+.linkpicture{
+    width: 80px;
+    padding: 0px;
+}
+.nav.navbar-nav.navbar-right{
+    transform: translateY(60%);
+}
+.navinput{
+    background: rgb(71, 71, 71);
+    color: darkgrey;
+    margin-left: 5px;
+    border: none;
+}
+.navinput:focus{
+    outline: darkgrey;
+}
+.navfunction{
+    color: darkgrey;
+    margin-left: 5px;
+}
+.navfunction:hover{
+    color: white;
+}
+#welcome{
+    color: darkgrey;
+    float: left;
+    margin-right: 30px;
+}
+.productlabel{
+    color: darkgrey;
+    width: 100px;
+    margin: 5px;
+}
+.orderinput{
+    margin: 5px;
+
+}
+.orderheader{
+    color: darkgrey;
+    margin-bottom: 30px;
+}
+#submitorderbutton{
+    margin: 5px;
+    width: 100px;
+    margin-left: 119px;
+}
+.routelabel{
+    margin-right: 20px;
+    color: darkgrey;
+    width: 130px;
+}
+.routetime{
+    color: darkgrey;
+}
+.contactinput{
+    margin: 5px;
+}
+.contactlabel{
+    width: 130px;
+    color: darkgrey;
+    vertical-align: top;
+    margin: 5px;
+}
+#textarea{
+    margin: 5px;
+}
+#submitmessagebutton{
+    margin-left: 149px;
+}
